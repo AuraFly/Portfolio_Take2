@@ -1,5 +1,5 @@
 import Item from "./Item";
-import { PROJECTS1, PROJECTS2, SOCIAL, SUPPORT } from "./Menus";
+import { PROJECTS1, PROJECTS2, SOCIAL } from "./Menus";
 const ItemsContainer = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 sm:px-8 px-5 py-16">
