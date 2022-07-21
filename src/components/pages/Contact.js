@@ -13,16 +13,21 @@ export default function Contact() {
       .join("&");
   }
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
+      body: encode({
+        contact: e.target.getAttribute("name", "email", "message"),
+        ...name,
+        ...email,
+        ...message,
+      }),
     })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
-  }
+      .then(() => navigate("/thank-you/"))
+      .catch((err) => alert(err));
+  };
 
   return (
     <section id="contact" className="relative">
@@ -67,6 +72,7 @@ export default function Contact() {
         <form
           data-netlify="true"
           name="contact"
+          method="post"
           onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
