@@ -25,12 +25,8 @@ export default function Contact() {
         ...message,
       }),
     })
-      .then(() => {
-        result.innerText = "Success";
-      })
-      .catch((error) => {
-        result.innerText = `Failed: ${error}`;
-      });
+      .then(() => alert("Message sent!"))
+      .catch((error) => alert(error));
   };
 
   return (
