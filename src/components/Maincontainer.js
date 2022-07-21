@@ -13,10 +13,20 @@ export default function Maincontainer() {
   // Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
     if (currentPage === "Aboutme") {
-      return <Aboutme />;
+      return (
+        <Aboutme
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
+      );
     }
     if (currentPage === "Projects") {
-      return <Projects />;
+      return (
+        <Projects
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
+      );
     }
     if (currentPage === "Skillsets") {
       return <Skillsets />;
@@ -33,14 +43,6 @@ export default function Maincontainer() {
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
       <Footer />
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-      ></script>
     </main>
   );
 }

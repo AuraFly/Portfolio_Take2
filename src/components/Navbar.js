@@ -19,7 +19,9 @@ function Navbar({ currentPage, handlePageChange }) {
           <a
             href="#Projects"
             onClick={() => handlePageChange("Projects")}
-            className={currentPage === "data" ? "nav-link active" : "nav-link"}
+            className={
+              currentPage === "Projects" ? "nav-link active" : "nav-link"
+            }
           >
             <p className="mr-5 hover:text-white">My Projects</p>
           </a>

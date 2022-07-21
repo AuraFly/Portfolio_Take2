@@ -2,7 +2,7 @@ import React from "react";
 
 const myname = "Jordan Covarrubias ";
 
-export default function About() {
+function Aboutme({ currentPage, handlePageChange }) {
   return (
     <section id="aboutme">
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
@@ -20,16 +20,26 @@ export default function About() {
           </p>
           <div className="flex justify-center">
             <a
-              href="#contact"
-              className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+              href="#Contact"
+              onClick={() => handlePageChange("Contact")}
+              className={
+                currentPage === "Contact" ? "nav-link active" : "nav-link"
+              }
             >
-              Contact Me
+              <p className="mr-10 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+                Contact Me
+              </p>
             </a>
             <a
-              href="#projects"
-              className="ml-4 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+              href="#Projects"
+              onClick={() => handlePageChange("Projects")}
+              className={
+                currentPage === "Projects" ? "nav-link active" : "nav-link"
+              }
             >
-              Portfolio
+              <p className="mr-10 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+                Portfolio
+              </p>
             </a>
           </div>
         </div>
@@ -44,3 +54,5 @@ export default function About() {
     </section>
   );
 }
+
+export default Aboutme;

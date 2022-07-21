@@ -12,9 +12,10 @@ export default function Projects() {
             My Past Projects
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
+            These are projects that I have completed in the past. Some I am
+            still working to improve as I discover new methodologies and
+            technologies. Feel free to browse around, or even contribute to any
+            project!
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
