@@ -27,7 +27,10 @@ export default function Contact() {
     })
       .then(() => {
         result.innerText = "Success";
-      .catch((err) => alert(err));
+      })
+      .catch((error) => {
+        result.innerText = `Failed: ${error}`;
+      });
   };
 
   return (
