@@ -8,7 +8,7 @@ export const projects = [
     link: "https://aurafly.github.io/Password_Generator_Homework/",
   },
   {
-    title: "Text Editor",
+    title: "JS Quiz",
     subtitle: "HTML/CSS/Javascript",
     description:
       "One of my first projects to showcase that I knew how to use basic HTML, CSS, and Javascript, practicing local storage and timers",
@@ -46,7 +46,7 @@ export const projects = [
     description:
       "Our second two-week project of the University of Denver bootcamp. Partnering with Cynthia Godoy, Ellen Furness, and Walker Jezek. We decided to make a fitness tracking blog",
     image: "./FWF.gif",
-    link: "https://github.com/AuraFly/Pepper_Pods_Blog",
+    link: "https://github.com/AuraFly/Fit_With_Friends",
   },
   {
     title: "Ecommerce BackEnd",
@@ -86,7 +86,7 @@ export const projects = [
     description:
       "Our first two-week project of the University of Denver bootcamp. Partnering with David Irving and Shane Wilmes. We decided to make a web app that can find recipes based off of ingredients and dietary restrictions.",
     image: "./pantry.png",
-    link: "https://github.com/AuraFly/Team_Profile_Generator",
+    link: "https://github.com/AuraFly/Pantry_Recipes",
   },
   {
     title: "Weather Dashboard",

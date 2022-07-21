@@ -1,6 +1,6 @@
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
-import { skillsets } from "../data";
+import { skillsets } from "../../data";
 
 export default function Skills() {
   return (
