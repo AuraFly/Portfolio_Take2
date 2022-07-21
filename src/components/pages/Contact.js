@@ -25,7 +25,8 @@ export default function Contact() {
         ...message,
       }),
     })
-      .then(() => navigate("/thank-you/"))
+      .then(() => {
+        result.innerText = "Success";
       .catch((err) => alert(err));
   };
 
